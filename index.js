@@ -37,8 +37,8 @@ Aşağıdakileri yap:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-var birinciDeger = 10;
-var ikinciDeger = 20;
+let birinciDeger = 10;
+const ikinciDeger = 20;
 
 if (birinciDeger < ikinciDeger) {
   birinciDeger = ikinciDeger;
@@ -69,7 +69,7 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
 function carpma(a, b) {
   return a * b;
 }
-console.log(carpma(7, 4));
+console.log("carpma", carpma(7, 4));
 /* Görev 2 : Köpeğin Yaşı */
 
 /*
@@ -85,7 +85,7 @@ function kopeginYasi(insanYasi) {
 }
 const insanYasi = 5;
 const kopekYasi = kopeginYasi(insanYasi);
-console.log("Köpeğin yaşınız:", kopekYasi);
+console.log("Köpeğin yaşı:", kopekYasi);
 /* Görev 3 */
 /*
 Aşağıdakileri oyun isimli fonksiyonu kullanarak yap.
@@ -198,8 +198,8 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yap:
 */
 function cocukSarkisi(maymunSayısı) {
   console.log(
-    { maymunSayısı },
-    "küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+    `${maymunSayısı},
+    küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!`
   );
 }
 for (let maymunSayısı = 5; maymunSayısı >= 1; maymunSayısı--) {
